@@ -1,144 +1,304 @@
-<div class="row">
-    <div class="span4">
-        <h2>Professional profile</h2>
-    </div>
-    <div class="span8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi justo. Duis eu lectus turpis. Sed a tortor lacus. Nam nec ultricies nunc. Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo. Mauris metus metus, sollicitudin eu tincidunt eget, imperdiet dapibus quam.</p>
-        <ul>
-            <li>Vivamus congue massa et diam ullamcorper ultricies.</li>
-            <li>Quisque lobortis feugiat ipsum, lacinia sagittis augue consectetur at.</li>
-            <li>Vestibulum pharetra nisl eros, vel iaculis justo.</li>
-        </ul>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <script src="./public/js/bootstrap.js"></script>
+    <script src="./public/js/jquery.min.js"></script>
+    <title>{scripts} smith || Coding</title>
+    <link href="./public/css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+
+<body style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;'>
+<script>
+
+    function toggle(id) {
+        var elem = $("#" + id);
+        elem.is(":hidden") ? elem.slideDown("slow") : elem.slideUp();
+        $("div[id*='info'][id!='" + id + "']").slideUp();
+    }
+
+</script>
+<style>
+    div.head_logo {
+        background-image: url(./public/img/logo1.png);
+        display: block;
+        background-position: 50% 0%;
+        background-repeat: repeat no-repeat;
+        width: 100%;
+        height: 480px;
+        vertical-align: middle;
+    }
+
+    div.head_logo h6 {
+        font-family: 'Lato', sans-serif !important;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bold;
+        color: #252526;
+        line-height: 29px;
+        margin: 0 0 16px 0;
+        color: #fff;
+        font-weight: normal;
+        line-height: 56px;
+        text-shadow: 1px 1px 1px rgb(49, 57, 61);
+        padding: 100px 50px;
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .topbar {
+        height: 46px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+        overflow: visible;
+    }
+
+    .fill {
+        background-color: #181818;
+        background-repeat: repeat-x;
+        background-image: url("../imgs/foot-header-bg.png");
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .container1 {
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        zoom: 1;
+    }
+
+    #item_name {
+        width: 500px;
+        float: left;
+        font-size: 24px !important;
+        line-height: 24px !important;
+        font-weight: normal !important;
+        padding: 0 !important;
+        margin: 11px 0 0 15px !important;
+        letter-spacing: -1px;
+    }
+
+    .topbar a {
+        color: #bfbfbf;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    #w23 {
+        padding-bottom: 38px;
+        background: white;
+        box-shadow: 4px 4px 20px 1px #E0E0E0;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 270px;
+    }
+
+    #w23 .img {
+        text-align: center;
+    }
+
+    .ico {
+        margin-top: 5px;
+        padding: 0px 0px 0px 25px;
+    }
+
+    #ico_1 {
+        background: url(./public/img/icq_icon.png) no-repeat;
+    }
+
+    #ico_2 {
+        background: url(./public/img/jabber.png) no-repeat;
+    }
+
+    #ico_3 {
+        background: url(./public/img/mail-icon_old.jpg) no-repeat;
+    }
+
+</style>
+
+<!-- Add your site or application content here -->
+
+
+<div id="tray" class="topbar" sty1le="width: auto;">
+    <div class="fill">
+        <div class="container1">
+            <a class="brand" style="visibility: hidden" href="https://wrapbootstrap.com/"><img src="/imgs/logo.png"></a>
+
+            <h1 id="item_name"><a href="#">{scripts} smith &nbsp;&nbsp;&nbsp;High Quality - Low Prices</a></h1>
+
+            <div class="remove"></div>
+            <div class="remove" style="visibility: hidden"><a class="btn"
+                                                              href="http://wbpreview.com/previews/WB02634G3/"
+                                                              title="Remove this frame">Remove this frame »</a></div>
+
+        </div>
     </div>
 </div>
-<hr>
-<div class="row">
-    <div class="span4">
-        <h2>Work experience</h2>
-    </div>
-    <div class="span8">
-        
-        <div class="row">
-            <div class="span4">
-                <h3>Front End Developer</h3>
-        <h6>Studio Web, Full-Time</h6>
-        <p style="margin-top:40px;"><strong>Period: </strong> July 2001 - Present day</p>
-        <p><strong>Primary functions: </strong>Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo.</p>
-        <p><strong>References: </strong>George Smith</p>
-            </div>
-            <div class="span4">
-                <p>Duis eu lectus turpis. Sed a tortor lacus. Nam nec ultricies nunc. Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo. Mauris metus metus, sollicitudin eu tincidunt eget, imperdiet dapibus quam.</p>
-        <ul>
-            <li>Vivamus congue massa et diam ullamcorper ultricies.</li>
-            <li>Quisque lobortis feugiat ipsum, lacinia sagittis augue consectetur at.</li>
-            <li>Vestibulum pharetra nisl eros, vel iaculis justo.</li>
-        </ul>
+
+
+<div class="head_logo">
+    <h6>
+        Разработка и поддрежка сайтов\скриптов<br>
+        Доработка и исправление чужого кода<br>
+        Установка и настройка CMS\форумов\TDS\etc <br>
+        Верстка
+    </h6>
+
+    <br>
+
+
+</div>
+<div class="container">
+    <div class="row">
+
+
+        <div class="span12"><p>
+
+            <h1>Контакты </h1>
+            <ul class="icons" style="list-style: none">
+                <li class="ico" id="ico_1"> 677404194</li>
+                <li class="ico" id="ico_2"> webdevolop@jabber.ru</li>
+                <li class="ico" id="ico_3"> webdevolop@yandex.ru</li>
+            </ul>
+            <br><br>
+        </div>
+
+
+        <div class="span3" style="width: 300px">
+            <div class="well">
+                <h2 class="text-warning">Скрипты</h2>
+
+                <p>Профессиональная разработка скриптов любой сложности.</p>
+                <hr>
+                <h3>от $10.00</h3>
+                <hr>
+                <p><a onclick="toggle('info');  return false;" class="btn btn-success btn-large" href="#"><i
+                        class="icon-ok"></i> Подробнее</a></p>
             </div>
         </div>
 
-        <hr>
 
-        <div class="row">
-            <div class="span4">
-                <h3>Front End Developer</h3>
-        <h6>Studio Web, Full-Time</h6>
-        <p style="margin-top:40px;"><strong>Period: </strong> July 2001 - Present day</p>
-        <p><strong>Primary functions: </strong>Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo.</p>
-        <p><strong>References: </strong>George Smith</p>
-            </div>
-            <div class="span4">
-                <p>Duis eu lectus turpis. Sed a tortor lacus. Nam nec ultricies nunc. Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo. Mauris metus metus, sollicitudin eu tincidunt eget, imperdiet dapibus quam.</p>
-        <ul>
-            <li>Vivamus congue massa et diam ullamcorper ultricies.</li>
-            <li>Quisque lobortis feugiat ipsum, lacinia sagittis augue consectetur at.</li>
-            <li>Vestibulum pharetra nisl eros, vel iaculis justo.</li>
-        </ul>
+        <div class="span3" style="width: 300px">
+            <div class="well">
+                <h2 class="text-warning">Чужой код</h2>
+
+                <p>Доработка, оптимизация, баг-фиксы ваших проектов.</p>
+
+                <hr>
+                <h3>от $20.00</h3>
+                <hr>
+                <p><a onclick="toggle('info1');  return false;" class="btn btn-success btn-large" href="#"><i
+                        class="icon-ok"></i> Подробнее</a></p>
             </div>
         </div>
-        
+
+
+        <div class="span3" style="width: 300px">
+            <div class="well">
+                <h2 class="text-warning">CMS\TDS</h2>
+
+                <p>Установка и настройка любых CMS\форумов\TDS\админ панелей\etc.</p>
+                <hr>
+                <h3>от $15.00</h3>
+                <hr>
+                <p><a onclick="toggle('info2');  return false;" class="btn btn-success btn-large" href="#"><i
+                        class="icon-ok"></i> Подробнее</a></p>
+            </div>
+        </div>
+
+
     </div>
-    
+
+    <div id="info" class="well" style="width: 900px;display: none">
+        <ul class="icons">
+            <li>Парсеры</li>
+            <li>Автореггеры    </li>
+            <li>Бруты           </li>
+            <li>Мелкие скрипты </li>
+            <li>Админки</li>
+            <li>Плагины для CMS</li>
+            <li>Всевозможные скрипты на JavaScript</li>
+            <li>Помощь в установке и дальнейшая поддержка</li>
+            <li>Многое другое</li>
+        </ul>
+
+
+    </div>
+
+    <div id="info1" class="well" style="width: 900px;display: none">
+        Доработка, оптимизация, баг-фиксы ваших скриптов, сайтов, модулей для cms.
+    </div>
+
+    <div id="info2" class="well" style="width: 900px;display: none">
+        Установка и настройка под ваши требования cms, форумов, админ-панелей, tds и многое другое.
+    </div>
+
+    <br><br><br>
+
+    <div class="feature_wrapper option3">
+        <div class="section_header">
+            <h3>
+                <small></small>
+            </h3>
+        </div>
+
+
+        <div class="row">
+
+            <div id="w23" class="span4 feature">
+                <div class="img">
+                    <img src="./public/img/features-ico6.png">
+                </div>
+                <div class="text">
+                    <h6>Planning</h6>
+
+                    <p>
+                        Составление технического задания, утверждения сроков и бюджета заказа.   <br>
+                        На этом этапе разработка представляет собой очень плотное общение разработчика и заказчика, выявляются и тщательно документируются все требования.
+                    </p>
+                </div>
+            </div>
+            <!-- Feature -->
+            <div id="w23" class="span4 feature">
+                <div class="img">
+                    <img src="./public/img/features-ico7.png">
+                </div>
+                <div class="text">
+                    <h6>Coding</h6>
+
+                    <p>
+                        Разработка переходит к стадии создания собственно программной части.
+                        <br><br><br><br><br>
+                    </p>
+                </div>
+            </div>
+            <!-- Feature -->
+            <div id="w23" class="span4 feature last">
+                <div class="img">
+                    <img src="./public/img/features-ico5.png">
+                </div>
+                <div class="text">
+                    <h6>Deploi</h6>
+
+                    <p>
+                        Заказчик принимает заказ, тестирует, если требуется, выполняются доработки, после чего производится оплата.
+                        <br><br><br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<hr>
-<div class="row">
-    <div class="span4">
-        <h2>Education</h2>
-    </div>
-    <div class="span8">
-        <h3>FATEC - State College of Sorocaba</h3>
-        <h6>Analysys and Systems development</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi justo. Duis eu lectus turpis. Sed a tortor lacus. Nam nec ultricies nunc. Aliquam porta, elit ac condimentum pretium, sapien quam tempor augue, a placerat enim diam interdum leo.</p>
-    </div>
-</div>
-<hr>
-<div class="row">
-    <div class="span4">
-        <h2>Technical skill</h2>
-    </div>
-    <div class="span8">
-        <table class="table">
-          <thead>
-            <tr>
-              <th colspan="2"><h3>Programming</h3></th>
-              <th colspan="2"><h3>Design Tools</h3></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="25%">HTML 5</td>
-              <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 40%;"></div>
-                    </div>
-              </td>
-                <td width="25%">Photoshop</td>
-                <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 90%;"></div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-              <td width="25%">CSS3</td>
-              <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 80%;"></div>
-                    </div>
-              </td>
-                <td width="25%">InDesign</td>
-                <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 50%;"></div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-              <td width="25%">Javascript</td>
-              <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 85%;"></div>
-                    </div>
-              </td>
-                <td width="25%">Corel Draw</td>
-                <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 90%;"></div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-              <td width="25%">PHP 5</td>
-              <td width="25%">
-                    <div class="progress progress-info">
-                    <div class="bar" style="width: 70%;"></div>
-                    </div>
-              </td>
-                <td width="25%">&nbsp;</td>
-                <td width="25%">&nbsp;
-                    
-                </td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
- </div>       
+         <br><br><br>
+
+</body>
+</html>
